@@ -1,0 +1,60 @@
+{
+  "video_circulares": [{
+    "title": "Circulares Title",
+    "sub_title": "Prueba Sub Title",
+    "image": "assets/imgs/logo.png",
+    "url_video": "http://www.sample-videos.com/video/mp4/480/big_buck_bunny_480p_1mb.mp4",
+    "type": "video_circulares"
+  },
+    {
+      "title": "Circulares Title 1",
+      "sub_title": "Circulares Sub Title 1",
+      "image": "assets/imgs/logo.png",
+      "url_video": "http://www.sample-videos.com/video/mp4/480/big_buck_bunny_480p_1mb.mp4",
+      "type": "video_circulares"
+    },
+    {
+      "title": "Circulares Title 2",
+      "sub_title": "Circulares Sub Title 2",
+      "image": "assets/imgs/logo.png",
+      "url_video": "http://www.sample-videos.com/video/mp4/480/big_buck_bunny_480p_1mb.mp4",
+      "type": "video_circulares"
+    },
+    {
+      "title": "Circulares Title 3",
+      "sub_title": "Circulares Sub Title 3",
+      "image": "assets/imgs/logo.png",
+      "url_video": "http://www.sample-videos.com/video/mp4/480/big_buck_bunny_480p_1mb.mp4",
+      "type": "video_circulares"
+    }
+  ],
+  "video_lineales": [{
+    "title": "Lineales Title ",
+    "sub_title": "Lineales Sub Title ",
+    "image": "assets/imgs/logo.png",
+    "url_video": "http://www.sample-videos.com/video/mp4/480/big_buck_bunny_480p_1mb.mp4",
+    "type": "video_circulares"
+  },
+    {
+      "title": "Lineales Title 1",
+      "sub_title": "Lineales Sub Title 1",
+      "image": "assets/imgs/logo.png",
+      "url_video": "http://www.sample-videos.com/video/mp4/480/big_buck_bunny_480p_1mb.mp4",
+      "type": "video_circulares"
+    },
+    {
+      "title": "Lineales Title 2",
+      "sub_title": "Lineales Sub Title 2",
+      "image": "assets/imgs/logo.png",
+      "url_video": "http://www.sample-videos.com/video/mp4/480/big_buck_bunny_480p_1mb.mp4",
+      "type": "video_circulares"
+    },
+    {
+      "title": "Lineales Title 3",
+      "sub_title": "Lineales Sub Title 3",
+      "image": "assets/imgs/logo.png",
+      "url_video": "http://www.sample-videos.com/video/mp4/480/big_buck_bunny_480p_1mb.mp4",
+      "type": "video_circulares"
+    }
+  ]
+}

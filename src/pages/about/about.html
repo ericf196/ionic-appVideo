@@ -1,11 +1,27 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      About 1
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
+
+  <ion-card *ngFor="let videoC of videosCirculares">
+    <ion-item (click)="startVideo(videoC.url_video)" item-start>
+      <ion-grid>
+        <ion-row>
+          <ion-col style="margin-left: -13px" col-3>
+            <img src="{{videoC.image}}">
+          </ion-col>
+          <ion-col col-9>
+            <h2>{{videoC.title}}</h2>
+            <p>{{videoC.sub_title}}</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-card>
 
 </ion-content>

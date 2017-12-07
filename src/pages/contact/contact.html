@@ -1,17 +1,34 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Contact
+      YouTube
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
   <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
+    <ion-list-header>YouTube</ion-list-header>
     <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
+      <button ion-button full (click)="startVideo()">Start Video YouTube</button>
+    </ion-item>
+
+    <ion-item>
+      <button ion-button full (click)="uid()">Uid</button>
     </ion-item>
   </ion-list>
+
+  <ion-item>
+    <button ion-button full (click)="serial()">Serial</button>
+  </ion-item>
+
+  <div>
+    {{device.uuid}}
+  </div>
+  <div>
+    {{device.serial}}
+  </div>
+
 </ion-content>
+
+
