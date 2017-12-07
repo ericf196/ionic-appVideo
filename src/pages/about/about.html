@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About 1
+      Videos Circulares
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -9,7 +9,7 @@
 <ion-content>
 
   <ion-card *ngFor="let videoC of videosCirculares">
-    <ion-item (click)="startVideo(videoC.url_video)" item-start>
+    <ion-item (click)="startVideo(videoC.id_video)" item-start>
       <ion-grid>
         <ion-row>
           <ion-col style="margin-left: -13px" col-3>

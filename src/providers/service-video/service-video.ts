@@ -17,7 +17,7 @@ export class ServiceVideoProvider {
 
   getVideos(): Observable<any> {
     console.log('getVideos');
-    return this.http.get('assets/test.json')
+    return this.http.get('assets/videos.json');
   }
 
 }

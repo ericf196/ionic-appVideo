@@ -9,11 +9,26 @@
 
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>Videos Lineales</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <button ion-button full (click)="startVideo()">Start Video</button>
+<ion-content>
+
+  <ion-card *ngFor="let videoL of videosLineales">
+    <ion-item (click)="startVideo(videoL.id_video)" item-start>
+      <ion-grid>
+        <ion-row>
+          <ion-col style="margin-left: -13px" col-3>
+            <img src="{{videoL.image}}">
+          </ion-col>
+          <ion-col col-9>
+            <h2>{{videoL.title}}</h2>
+            <p>{{videoL.sub_title}}</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-card>
+
 </ion-content>
