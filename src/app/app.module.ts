@@ -17,7 +17,7 @@ import {YoutubeVideoPlayer} from "@ionic-native/youtube-video-player";
 import { ServiceVideoProvider } from '../providers/service-video/service-video';
 
 import { Device } from '@ionic-native/device';
-
+import { ScreenOrientation } from '@ionic-native/screen-orientation'
 
 
 @NgModule({
@@ -49,6 +49,7 @@ import { Device } from '@ionic-native/device';
     YoutubeVideoPlayer,
     ServiceVideoProvider,
     Device,
+    ScreenOrientation
   ]
 })
 export class AppModule {}

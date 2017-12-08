@@ -3,6 +3,8 @@ import { NavController } from 'ionic-angular';
 import {StreamingMedia, StreamingVideoOptions} from "@ionic-native/streaming-media";
 import {YoutubeVideoPlayer} from '@ionic-native/youtube-video-player';
 import {ServiceVideoProvider} from "../../providers/service-video/service-video";
+import { ScreenOrientation } from '@ionic-native/screen-orientation';
+
 
 @Component({
   selector: 'page-home',
@@ -16,7 +18,9 @@ export class HomePage {
   private videosCirculares: any;
   private videosLineales: any;
 
-  constructor(private youtube: YoutubeVideoPlayer, private streamingMedia: StreamingMedia, private serviceVideoProvider: ServiceVideoProvider) {
+  constructor(private youtube: YoutubeVideoPlayer, private streamingMedia: StreamingMedia, private serviceVideoProvider: ServiceVideoProvider,private screenOrientation: ScreenOrientation) {
+    /*this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.LANDSCAPE);*/
+
     this.tabBarElement = document.querySelector('.tabbar');
 
     this.serviceVideoProvider.getVideos().subscribe(

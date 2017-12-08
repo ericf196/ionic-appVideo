@@ -36,6 +36,14 @@ export class ContactPage {
 
   serial(){
     console.log('Device Serial is: ' + this.device.serial);
+    window['plugins'].imei.get(
+      function(imei) {
+        console.log("got imei: " + imei);
+      },
+      function() {
+        console.log("error loading imei");
+      }
+    );
   }
 }
 
