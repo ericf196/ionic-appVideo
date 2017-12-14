@@ -1,21 +1,29 @@
-<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
-  <div class="flb">
-    <div class="Aligner-item Aligner-item--top"></div>
-    <img style="height: 30%; width: 30%"  src="assets/imgs/logo.png">
-    <div class="Aligner-item Aligner-item--bottom"></div>
+<!--<div id="custom-overlay" style="background-image: url('../../assets/imgs/Home 2.jpg');" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb" style="background-image: url('../../assets/imgs/Home 2.jpg');">
+    <div class="Aligner-item Aligner-item&#45;&#45;top" style="background-image: url('../../assets/imgs/Home 2.jpg');"></div>
+    <img style="height: 100px; width: 100px"  src="assets/imgs/logo.png">
+    <div class="Aligner-item Aligner-item&#45;&#45;bottom"></div>
   </div>
-</div>
+</div>-->
 
-<ion-header>
-  <ion-navbar>
-    <ion-title>Videos Lineales</ion-title>
-  </ion-navbar>
-</ion-header>
 
 <ion-content>
 
+  <ion-slides>
+    <ion-slide class="slider-1">
+      <h1>ENTRENA EN LOS LUGARES MAS FASCINANTES DEL MUNDO</h1>
+      <ion-img style="position: absolute; right: 0px;" src="assets/imgs/logo.png"></ion-img>
+    </ion-slide>
+    <ion-slide class="slider-2">
+      <h1>ENTRENAMIENTO CON DIFERENTES NIVELES Y MAS DE <strong>250</strong>EJERCICIOS</h1>
+    </ion-slide>
+  </ion-slides>
+ <!-- <ion-img class="img-ems" src="assets/imgs/Square150x150.png"></ion-img>-->
+</ion-content>
+
+<!--<ion-content>
   <ion-card *ngFor="let videoL of videosLineales">
-    <ion-item (click)="startVideo(videoL.id_video)" item-start>
+    <ion-item (click)="startVideo1(videoL.id_video)" item-start>
       <ion-grid>
         <ion-row>
           <ion-col style="margin-left: -13px" col-3>
@@ -29,5 +37,4 @@
       </ion-grid>
     </ion-item>
   </ion-card>
-
-</ion-content>
+</ion-content>-->

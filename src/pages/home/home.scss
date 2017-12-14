@@ -37,6 +37,31 @@
   animation: animation 4000ms linear both;
 }
 
+page-home {
+  h1{
+    color: white;
+    display: inline;
+  }
+
+  .slider-1 {
+    background: url("../assets/imgs/Home-1.jpg") no-repeat center center fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+
+  }
+  .slider-2 {
+    background: url("../assets/imgs/Home-2.jpg") no-repeat center center fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+
+  }
+
+}
+
 @-webkit-keyframes animation {
   0% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   0.85% { -webkit-transform: matrix3d(1.147, 0.934, 0, 0, -0.874, 1.227, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1.147, 0.934, 0, 0, -0.874, 1.227, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
@@ -128,6 +153,7 @@
   81.48% { -webkit-transform: matrix3d(0, 2, 0, 0, -2, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0, 2, 0, 0, -2, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   100% { -webkit-transform: matrix3d(0, 2, 0, 0, -2, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0, 2, 0, 0, -2, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
 }
+
 
 
 

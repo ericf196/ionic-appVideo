@@ -1,14 +1,24 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      YouTube
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
 <ion-content>
+  <ion-card *ngFor="let videoL of videosLineales">
+    <ion-item style="background: url('../../assets/imgs/Circular.jpg') no-repeat center center;" (click)="startVideo1()" item-start>
+      <ion-grid>
+        <ion-row>
+          <ion-col style="margin-left: -13px" col-3>
+            <img src="{{videoL.image}}">
+          </ion-col>
+          <ion-col col-9>
+            <h2>{{videoL.title}}</h2>
+            <p>{{videoL.sub_title}}</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-card>
+</ion-content>
+
+<!--<ion-content >
   <ion-list>
-    <ion-list-header>YouTube</ion-list-header>
+
     <ion-item>
       <button ion-button full (click)="startVideo()">Start Video YouTube</button>
     </ion-item>
@@ -16,19 +26,31 @@
     <ion-item>
       <button ion-button full (click)="uid()">Uid</button>
     </ion-item>
+
+    <ion-item>
+      <button ion-button full (click)="serial()">Serial</button>
+    </ion-item>
+
+    <ion-item>
+      <button ion-button full (click)="download()">Download</button>
+    </ion-item>
+    <ion-item>
+      <button ion-button full (click)="mydir()">mydir</button>
+    </ion-item>
   </ion-list>
-
-  <ion-item>
-    <button ion-button full (click)="serial()">Serial</button>
-  </ion-item>
-
   <div>
     {{device.uuid}}
   </div>
   <div>
     {{device.serial}}
   </div>
+  <div>
+    {{downloadv}}
+  </div>
+  <div>
+    {{test}}
+  </div>
 
-</ion-content>
+</ion-content>-->
 
 

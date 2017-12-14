@@ -18,6 +18,11 @@ import { ServiceVideoProvider } from '../providers/service-video/service-video';
 
 import { Device } from '@ionic-native/device';
 import { ScreenOrientation } from '@ionic-native/screen-orientation'
+import { FileTransfer } from '@ionic-native/file-transfer';
+import { File } from '@ionic-native/file';
+
+import { ServiceDbProvider } from '../providers/service-db/service-db';
+import {SQLite} from "@ionic-native/sqlite";
 
 
 @NgModule({
@@ -49,7 +54,12 @@ import { ScreenOrientation } from '@ionic-native/screen-orientation'
     YoutubeVideoPlayer,
     ServiceVideoProvider,
     Device,
-    ScreenOrientation
+    ScreenOrientation,
+    FileTransfer,
+    File,
+    ServiceDbProvider,
+    SQLite
+
   ]
 })
 export class AppModule {}

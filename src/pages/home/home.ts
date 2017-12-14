@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import {Component, ViewChild} from '@angular/core';
+import {NavController, Slides} from 'ionic-angular';
 import {StreamingMedia, StreamingVideoOptions} from "@ionic-native/streaming-media";
 import {YoutubeVideoPlayer} from '@ionic-native/youtube-video-player';
 import {ServiceVideoProvider} from "../../providers/service-video/service-video";
@@ -11,6 +11,7 @@ import { ScreenOrientation } from '@ionic-native/screen-orientation';
   templateUrl: 'home.html'
 })
 export class HomePage {
+  @ViewChild(Slides) slides: Slides;
 
   splash = true;
   tabBarElement: any;
@@ -19,26 +20,19 @@ export class HomePage {
   private videosLineales: any;
 
   constructor(private youtube: YoutubeVideoPlayer, private streamingMedia: StreamingMedia, private serviceVideoProvider: ServiceVideoProvider,private screenOrientation: ScreenOrientation) {
-    /*this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.LANDSCAPE);*/
 
-    this.tabBarElement = document.querySelector('.tabbar');
+  }
+  test(){
 
-    this.serviceVideoProvider.getVideos().subscribe(
-      (res) => {
-        this.data = res;
-        this.videosCirculares = this.data.video_circulares;
-        this.videosLineales = this.data.video_lineales;
-        console.log(this.data);
-      }
-    );
   }
 
+
   ionViewDidLoad() {
-    this.tabBarElement.style.display = 'none';
+    /*this.tabBarElement.style.display = 'none';
     setTimeout(() => {
       this.splash = false;
       this.tabBarElement.style.display = 'flex';
-    }, 4000);
+    }, 4000);*/
   }
 
   startVideo(video: any) {
@@ -46,7 +40,7 @@ export class HomePage {
     this.youtube.openVideo("" + video);
   }
 
-  /*startVideo() {
+  startVideo1() {
 
     let options: StreamingVideoOptions = {
       successCallback: () => {
@@ -58,7 +52,7 @@ export class HomePage {
       orientation: 'landscape'
     }
 
-    this.streamingMedia.playVideo('http://www.sample-videos.com/video/mp4/480/big_buck_bunny_480p_1mb.mp4', options);
-  }*/
+    this.streamingMedia.playVideo('file:///storage/emulated/0/Android/data/io.ionic.starter/files/big_buck_bunny_240p_30mb.mp4', options);
+  }
 
 }

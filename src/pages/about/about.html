@@ -1,13 +1,5 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Videos Circulares
-    </ion-title>
-  </ion-navbar>
-</ion-header>
 
 <ion-content>
-
   <ion-card *ngFor="let videoC of videosCirculares">
     <ion-item (click)="startVideo(videoC.id_video)" item-start>
       <ion-grid>
