@@ -6,11 +6,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { TabsPage } from '../pages/tabs/tabs';
 import {SQLite} from "@ionic-native/sqlite";
 
+
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   rootPage:any = TabsPage;
+
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, public sqlite: SQLite) {
     platform.ready().then(() => {
@@ -19,7 +21,7 @@ export class MyApp {
       statusBar.styleDefault();
       splashScreen.hide();
 
-      this.createDatabase();
+      //this.createDatabase();
 
     });
   }

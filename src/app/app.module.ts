@@ -23,6 +23,7 @@ import { File } from '@ionic-native/file';
 
 import { ServiceDbProvider } from '../providers/service-db/service-db';
 import {SQLite} from "@ionic-native/sqlite";
+import {TransactionAppDB} from '../database'
 
 
 @NgModule({
@@ -58,7 +59,8 @@ import {SQLite} from "@ionic-native/sqlite";
     FileTransfer,
     File,
     ServiceDbProvider,
-    SQLite
+    SQLite,
+    TransactionAppDB,
 
   ]
 })
